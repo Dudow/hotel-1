@@ -1,24 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Playfair+Display:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Playfair+Display:ital@1&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 }
 
-header {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  
+body {
+  min-height: 100vh;
 }
 
-.navegation {
-  color: white;  
-  background: #302135;  
+.navigation {
+  color: white;
+  background: #302135;
   display: flex;
   justify-content: space-between;
-  padding: .5rem;
+  padding: 0.5rem;
   align-items: center;
 }
 
@@ -27,32 +23,32 @@ header {
   list-style: none;
   gap: 2rem;
   align-items: center;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 
-.home {
+.menuItem {
   padding: 1rem;
   font-size: 15px;
-  border:none;
+  border: none;
 }
-.home:hover {
- color: gold;
- cursor: pointer;
+.menuItem:hover {
+  color: gold;
+  cursor: pointer;
 }
 
 .about {
   padding: 1rem;
   font-size: 15px;
-  border:none;
+  border: none;
 }
 .about:hover {
- cursor: pointer;
+  cursor: pointer;
   color: gold;
 }
 
 .services {
   font-size: 15px;
-  border:none;
+  border: none;
 }
 .services:hover {
   cursor: pointer;
@@ -62,19 +58,19 @@ header {
 .contact {
   padding: 1rem;
   font-size: 15px;
-  border:none;
+  border: none;
   background: #302135;
   color: white;
 }
 
 .contact:hover {
- cursor: pointer;
- color: gold;
+  cursor: pointer;
+  color: gold;
 }
 
 .menu-nav button {
-    border-radius: 2px;
-    border:none;
+  border-radius: 2px;
+  border: none;
 }
 
 .menu-nav button:hover {
@@ -84,75 +80,84 @@ header {
 .div-img {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .div-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .8;
+  opacity: 0.8;
 }
 
-@keyframes enter {
-    0% {
-      transform: translateX(25rem) rotateX(-35deg);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0) rotateX(0);
-   opacity: 100%;
-    }
+.content {
+  min-height: 100vh;
 }
 
-.apresentation h1 {
+.presentation {
+  width: 100%;
+  height: 93vh;
+  background-image: url("./imgs/hotel.jpg");
+  background-size: auto;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.presentation h1 {
   animation: enter 2s;
-  left: 28.5%;
-  top: 10%;
-  position: absolute;
-  font-family: 'Lobster', serif;
+  font-family: "Lobster", serif;
   font-weight: 400;
-  color: #4e3357;  
+  color: #4e3357;
   opacity: 100%;
-  margin-bottom: .1rem;
+  margin-bottom: 0.1rem;
   font-size: 2.5rem;
-  text-shadow: .1rem .2rem 1px rgba(0, 0, 0, .4)
+  text-shadow: 0.1rem 0.2rem 1px rgba(0, 0, 0, 0.4);
 }
 
-.apresentation h2 {
-  top: 15%;
-  left: 31.3%;  
-  position: absolute;
+.presentation h2 {
   animation: enter 2s;
-  font-family: 'lobster', serif;
+  font-family: "lobster", serif;
   font-weight: 400;
-  color: #4e3357; 
+  color: #4e3357;
   margin-bottom: 1rem;
   font-size: 2.1rem;
-  text-shadow: .1rem .2rem 1px rgba(0, 0, 0, .4)
+  text-shadow: 0.1rem 0.2rem 1px rgba(0, 0, 0, 0.4);
+}
+
+.mainTitle {
+  max-width: 500px;
+  margin: 0;
+  text-align: center;
 }
 
 .room {
-  position: absolute;
-  top: 70%;
-  left: 39.5%;
   padding: 1.3rem 2rem;
   border-radius: 100rem;
   background-color: #4e3357;
   color: white;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   letter-spacing: 1px;
   border: none;
   animation: enterButton 3s;
   text-transform: uppercase;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .room:hover {
   cursor: pointer;
   color: gold;
-  
+}
+
+.logo-img {
+  display: flex;
+  height: 50px;
+}
+
+.logo-img:hover {
+  cursor: pointer;
 }
 
 @keyframes enterButton {
@@ -162,15 +167,34 @@ header {
   }
   100% {
     transform: translateY(0) rotateY(0);
- opacity: .9;
+    opacity: 0.9;
   }
 }
 
-.logo-img {
-  display:flex;
-  height: 50px;
+@keyframes enter {
+  0% {
+    transform: translateX(25rem) rotateX(-35deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateX(0);
+    opacity: 100%;
+  }
 }
 
-.logo-img:hover {
-  cursor: pointer;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
 }
