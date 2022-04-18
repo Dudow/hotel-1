@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Playfair+Display:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.navegation {
+  color: white;  
+  background: #302135;  
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  align-items: center;
+}
+
+.menu-nav {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  padding: .2rem;
+}
+
+.home {
+  padding: 1rem;
+  font-size: 15px;
+  border:none;
+}
+.home:hover {
+ color: gold;
+ cursor: pointer;
+}
+
+.about {
+  padding: 1rem;
+  font-size: 15px;
+  border:none;
+}
+.about:hover {
+ cursor: pointer;
+  color: gold;
+}
+
+.services {
+  font-size: 15px;
+  border:none;
+}
+.services:hover {
+  cursor: pointer;
+  color: gold;
+}
+
+.contact {
+  padding: 1rem;
+  font-size: 15px;
+  border:none;
+  background: #302135;
+  color: white;
+}
+
+.contact:hover {
+ cursor: pointer;
+ color: gold;
+}
+
+.menu-nav button {
+    border-radius: 2px;
+    border:none;
+}
+
+.menu-nav button:hover {
+  cursor: pointer;
+}
+
+.div-img {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.div-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .8;
+}
+
+@keyframes enter {
+    0% {
+      transform: translateX(25rem) rotateX(-35deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) rotateX(0);
+   opacity: 100%;
+    }
+}
+
+.apresentation h1 {
+  animation: enter 2s;
+  left: 28.5%;
+  top: 10%;
+  position: absolute;
+  font-family: 'Lobster', serif;
+  font-weight: 400;
+  color: #4e3357;  
+  opacity: 100%;
+  margin-bottom: .1rem;
+  font-size: 2.5rem;
+  text-shadow: .1rem .2rem 1px rgba(0, 0, 0, .4)
+}
+
+.apresentation h2 {
+  top: 15%;
+  left: 31.3%;  
+  position: absolute;
+  animation: enter 2s;
+  font-family: 'lobster', serif;
+  font-weight: 400;
+  color: #4e3357; 
+  margin-bottom: 1rem;
+  font-size: 2.1rem;
+  text-shadow: .1rem .2rem 1px rgba(0, 0, 0, .4)
+}
+
+.room {
+  position: absolute;
+  top: 70%;
+  left: 39.5%;
+  padding: 1.3rem 2rem;
+  border-radius: 100rem;
+  background-color: #4e3357;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  border: none;
+  animation: enterButton 3s;
+  text-transform: uppercase;
+  opacity: .9;
+}
+
+.room:hover {
+  cursor: pointer;
+  color: gold;
+  
+}
+
+@keyframes enterButton {
+  0% {
+    transform: translateY(25rem) rotateY(-35deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+ opacity: .9;
+  }
+}
+
+.logo-img {
+  display:flex;
+  height: 50px;
+}
+
+.logo-img:hover {
+  cursor: pointer;
+}
